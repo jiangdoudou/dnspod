@@ -17,7 +17,8 @@ arIpAdress() {
 # 参数: 待查询域名
 arNslookup() {
 	local dnsvr="114.114.114.114"
-	busybox nslookup ${1} $dnsvr | tr -d '\n[:blank:]' | sed 's/.\+1 \([0-9\.]\+\)/\1/'
+#	busybox nslookup ${1} $dnsvr | tr -d '\n[:blank:]' | sed 's/.\+1 \([0-9\.]\+\)/\1/'  //busybox for arm_cpu
+	nslookup ${1} $dnsvr | tr -d '\n[:blank:]' | sed 's/.\+1 \([0-9\.]\+\)/\1/'
 }
 
 # 读取接口数据
