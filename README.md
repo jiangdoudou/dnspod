@@ -12,3 +12,4 @@ arDdnsCheck "jiangdoudou.uni.me" "www" //是你申请的域名
 1 * * * * root /linshi/dnspod.sh
 
 定时每隔1小时运行目录下/linshi/ 的 dnspod.sh
+//
